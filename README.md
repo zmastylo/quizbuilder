@@ -36,14 +36,27 @@ can install a Python version you need.
 - pip3 install -r requirements.txt
 
 #### Generate secret (jwt) key and propagate to your local env
-1. openssl rand -hex 32 
-2. open core/config: 
-    1. copy secret key generated in Step 1
-    2. paste it into
+1. Run openssl
+   1. openssl rand -hex 32 
+2. For default secret key (only for local testing):
+   1. Open core/config.py:
+   2. Copy secret key generated in Step 1 
+   3. Paste it into
 ```
 class TokenSettings(BaseSettings):
    jwt_local_signature = 'secret key'
 ```
+3. Repeat step 1
+   1. Export generated key
+      1. export JWT_SIGNATURE=token (generated in Step 3)
+      2. At best, you want to put export JWT_SIGNATURE=token in your shell init
+         1. For zsh: echo 'export JWT_SIGNATURE=token' >> ~/.zshrc
+         2. Then: . ~/.zshrc 
+4. Export JWT_EXPIRE_MINUTES=number_of_minutes_for_token_to_expire_since_creation
+         
+#### IMPORTANT_NOTE:
+You can totally skip Step 1 and Step 2 above and go directly to Step 3
+even for local testing. Just export your JWT_SIGNATURE.
 
 #### The config assumes local environment as a default one
 You can test in it.
