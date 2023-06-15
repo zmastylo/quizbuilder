@@ -40,8 +40,10 @@ can install a Python version you need.
 2. open core/config: 
     1. copy secret key generated in Step 1
     2. paste it into
-`class TokenSettings(BaseSettings):
-   jwt_local_signature = 'secret key'`
+```
+class TokenSettings(BaseSettings):
+   jwt_local_signature = 'secret key'
+```
 
 #### The config assumes local environment as a default one
 You can test in it.
