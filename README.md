@@ -36,11 +36,12 @@ can install a Python version you need.
 - pip3 install -r requirements.txt
 
 #### Generate secret (jwt) key and propagate to your local env
-Step 1: openssl rand -hex 32 
-Step 2: open core/config: copy secret key generated in Step 1 and 
-paste it into
-class TokenSettings(BaseSettings):
-    jwt_local_signature = 'secret key'
+Step 1. openssl rand -hex 32 
+Step 2. open core/config: 
+    A. copy secret key generated in Step 1
+    B. paste it into
+        class TokenSettings(BaseSettings):
+            jwt_local_signature = 'secret key'
 
 #### The config assumes local environment as a default one
 You can test in it.
