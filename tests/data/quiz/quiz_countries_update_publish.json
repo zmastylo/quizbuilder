@@ -1,0 +1,33 @@
+{
+  "title": "Capital of USA.",
+  "description": "Quiz about countries",
+  "is_published": true,
+  "questions": [
+    {
+      "title": "What is the Capital of the United States.",
+      "answers": [
+        {
+          "answer_text": "Paris",
+          "is_correct": false
+        },
+        {
+          "answer_text": "Egypt",
+          "is_correct": false
+        },
+        {
+          "answer_text": "Washington DC",
+          "is_correct": true
+        },
+        {
+          "answer_text": "Austin",
+          "is_correct": false
+        },
+        {
+          "answer_text": "Kansas City",
+          "is_correct": false
+        }
+      ]
+    }
+  ]
+}
+

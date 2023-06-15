@@ -1,0 +1,10 @@
+httpx
+fastapi
+uvicorn
+pydantic
+python-jose[cryptography]
+mongoengine
+python-multipart
+passlib
+pytest
+parametrized

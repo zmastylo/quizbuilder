@@ -1,0 +1,10 @@
+pylint
+black
+flake8
+pep8-naming
+isort
+safety
+pydocstyle
+bandit
+pre-commit
+

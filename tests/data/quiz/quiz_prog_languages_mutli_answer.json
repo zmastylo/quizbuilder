@@ -1,0 +1,32 @@
+{
+  "title": "What are Object Oriented Programming languages.",
+  "description": "Quiz about programming languages.",
+  "questions": [
+    {
+      "title": "Which languages are object-oriented.",
+      "answers": [
+        {
+          "answer_text": "C++",
+          "is_correct": true
+        },
+        {
+          "answer_text": "C",
+          "is_correct": false
+        },
+        {
+          "answer_text": "Python",
+          "is_correct": true
+        },
+        {
+          "answer_text": "Java",
+          "is_correct": true
+        },
+        {
+          "answer_text": "C#",
+          "is_correct": true
+        }
+      ]
+    }
+  ]
+}
+
