@@ -13,13 +13,15 @@ test_client = TestClient(app)
 def get_auth_client(
     username: str, password: str, endpoint: str = "/token"
 ) -> TestClient:
-    """Creates Fast API test client. If valid credentials are supplied
+    """
+    Creates Fast API test client. If valid credentials are supplied
     the client headers include bearer token, otherwise headers have no
     bearer token.
     :param username: User email
     :param password: Plaintext password
     :param endpoint: URL of the token endpoint
-    :return: FastAPI test client"""
+    :return: FastAPI test client
+    """
 
     auth_client = TestClient(app)
 
